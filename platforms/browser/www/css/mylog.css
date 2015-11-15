@@ -55,3 +55,19 @@ body {
   padding: 7px 0px;
   line-height: 20px;
 }
+
+.mylog-foot {
+  position: fixed;
+  min-height: 50px;
+  border: 1px solid transparent;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1031;
+  border-width: 0 0 1px;
+  background-color: #f8f8f8;
+  border-color: #e7e7e7;
+  padding: 15px 15px;
+  text-align:right;
+  line-height: 20px;
+}
