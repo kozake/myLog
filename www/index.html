@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--
+      Content Security Policy (CSP) は、クロスサイトスクリプティング (XSS) やデータインジェクション攻撃を含む、
+      よく知られた種類の攻撃を検出して軽減する、セキュリティの追加レイヤー.
+    -->
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+    <!-- 電話番号のリンク無効化 -->
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -19,37 +24,13 @@
 
     <title>my Log</title>
   </head>
-  <body style="padding-top: 70px; background: #fff" class="animsition">
-
-    <nav class="navbar navbar-default navbar-fixed-top">
-    	<div class="container-fluid">
-    		<div class="navbar-header">
-    			<button type="button" class="navbar-toggle collapsed"data-toggle="collapse"data-target="#navbarEexample8">
-    				<span class="sr-only">Toggle navigation</span>
-    				<span class="icon-bar"></span>
-    				<span class="icon-bar"></span>
-    				<span class="icon-bar"></span>
-    			</button>
-    			<a class="navbar-brand" href="#">my Log</a>
-    		</div>
-
-    		<div class="collapse navbar-collapse" id="navbarEexample8">
-    			<ul class="nav navbar-nav">
-            <li class="active"><a class="animsition-link" href="booklog.html">ホーム</a></li>
-    				<li><a class="animsition-link" href="booklog.html">読書</a></li>
-    			</ul>
-          <form class="navbar-form navbar-left navbar-right">
-            <button type="button" class="btn btn-default" aria-label="Left Align">
-              <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
-              追加
-            </button>
-          </form>
-        </div>
-    	</div>
-    </nav>
+  <body style="padding-top: 70px;background: #fff">
+    <div class="mylog-head">
+      my Log
+    </div>
 
     <div class="list-group">
-    	<a class="list-group-item list-group-item-info animsition-link" href="booklog.html">
+    	<a class="list-group-item list-group-item-info" href="booklog.html">
     		<h4 class="list-group-item-heading">読書</h4>
     		<p class="list-group-item-text">前回記録：2015/11/7(火) - シングルページWebアプリケーション 32/456</p>
     	</a>
