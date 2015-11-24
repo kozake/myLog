@@ -13,7 +13,9 @@ app.initialize();
 
 $(function () {
 
-  var chartdata74 = {
+  var viewdata = {
+    
+    chartdata: {
 
     "config": {
       "title": "シングルページWebアプリケーション",
@@ -34,16 +36,16 @@ $(function () {
       ["日", "3/1", "3/2", "3/3", "3/4", "3/5", "3/6", "3/7"],
       ["シングル~", 30, 43, 50, 164, 175, 265, 378]
     ]
-  };
+    }
+  }
 
-  ccchart.init('hoge', chartdata74);
+  ccchart.init('hoge', viewdata.chartdata);
 
   $("#datepicker").datepicker();
 
   new Vue({
     el: '#app',
-    data: {
-    },
+    data: viewdata,
     methods: {
       doRegist: function () {
         alert('regist')
