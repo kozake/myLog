@@ -37,6 +37,19 @@ var app = {
 };
 
 app.initialize();
+
+new Vue({
+  el: '#app',
+  data: {
+  },
+  methods: {
+    doRegist: function () {
+      alert('regist')
+    }
+  }
+})
+      alert('regist')
+
 var chartdata74 = {
 
   "config": {
