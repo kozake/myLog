@@ -42,12 +42,16 @@ new Vue({
   ready: function () {
     ccchart.init('hoge', this.chartdata);
 
-    $("#datepicker").datepicker();
+    $("#datepicker").datepicker()
   },
 
   methods: {
     doRegist: function () {
-      alert('regist')
+      this.chartdata.data = [
+        ["日", "3/1", "3/2", "3/3", "3/4", "3/5", "3/6", "3/7", "3/8"],
+        ["シングル~", 30, 43, 50, 164, 175, 265, 378, 398]
+      ]
+      ccchart.init('hoge', this.chartdata)
     }
   }
 })
