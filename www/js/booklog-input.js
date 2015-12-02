@@ -24,7 +24,8 @@ var vm = new Vue({
         ["シングル~", 30, 43, 50, 164, 175, 265, 378]
       ]
     },
-    read_bool_date: "2015/11/28"
+    read_book_date: "2015/11/28",
+    read_book_info: "平均: 20ページ 前回: 32ページ"
   },
 
   ready: function () {
